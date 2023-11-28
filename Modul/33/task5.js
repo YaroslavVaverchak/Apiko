@@ -29,8 +29,6 @@ async function fetchSWAPI(resource, throwError = false) {
     if (throwError) {
       throw error;
     }
-
-    return undefined;
   }
 }
 
@@ -54,7 +52,6 @@ async function getPersonFilms(name) {
     return { name: person.name, films: filmsDetails };
   } catch (error) {
     console.error(`Error getting films for ${name}`, error);
-    return undefined;
   }
 }
 
